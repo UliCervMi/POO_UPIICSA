@@ -1,0 +1,5 @@
+module-info.class
+cervantes\uli\edadpersona\App.class
+cervantes\uli\edadpersona\SecondaryController.class
+cervantes\uli\edadpersona\PrimaryController.class
+cervantes\uli\edadpersona\calcEdad.class

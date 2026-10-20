@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cervantes.uli.gatossemanales.PrimaryController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="226.0">
+         <children>
+            <Label alignment="TOP_LEFT" text="Alimentación:" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" text="Refrigerios:" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" text="Transporte:" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" text="Telefonía:" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" text="Otros:" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#calcula" prefHeight="40.0" prefWidth="182.0" text="Calcular Estadisticas" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="168.0">
+         <children>
+            <TextField fx:id="alimentacion" />
+            <TextField fx:id="refrigerios" />
+            <TextField fx:id="transporte" />
+            <TextField fx:id="telefonia" />
+            <TextField fx:id="otros" />
+            <Button mnemonicParsing="false" onAction="#limpia" text="Limpiar">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox prefHeight="400.0" prefWidth="47.0" />
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="258.0">
+         <children>
+            <Label alignment="TOP_LEFT" text="Estadísticas" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" text="Total Semanal" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="totalSemana" editable="false" prefHeight="26.0" prefWidth="64.0" />
+            <Label alignment="TOP_LEFT" text="Gasto más alto" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="gastoMayor" editable="false" />
+         </children>
+      </VBox>
+   </children>
+</HBox>
